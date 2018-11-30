@@ -34,7 +34,7 @@ async def snake(ctx):
 
         # Edit message/game interface
         await bot.edit_message(interface, new_content=("Coordinates = ({}, {})".format(xpos, ypos)))
-        
+
         # Reset reaction
         await bot.remove_reaction(interface, arrow, player)
 
