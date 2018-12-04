@@ -8,8 +8,13 @@ import random
 import math
 
 # Token from pycharm environmental variable
-TOKEN = os.environ['TOKEN']
+TOKENA = os.environ['TOKENA']
+TOKENB = os.environ['TOKENB']
 
-# Initialize bot
-bot = commands.Bot(command_prefix='$')
+# Initialize bots
+botA = commands.Bot(command_prefix='$')
+botB = commands.Bot(command_prefix='%')
+
+
+
 
