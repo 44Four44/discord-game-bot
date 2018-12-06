@@ -55,13 +55,8 @@ async def snake(ctx):
         # Edit message/game interface and coordinates message
         plane[41 * ypos + xpos] = '▓'
 
-        if frame % 2 == 0:
-            await botA.edit_message(interface, new_content=(''.join(plane)))
-            await botA.edit_message(coordinates, new_content=("Coordinates : ({}, {})".format(xpos, ypos)))
-        else:
-            await botB.edit_message(interface, new_content=(''.join(plane)))
-            await botB.edit_message(coordinates, new_content=("Coordinates : ({}, {})".format(xpos, ypos)))
-
+        await botA.edit_message(interface, new_content=(''.join(plane)))
+        await botA.edit_message(coordinates, new_content=("Coordinates : ({}, {})".format(xpos, ypos)))
 
         # Reset user reaction
         await botA.remove_reaction(message=interface, emoji=reaction.reaction.emoji, member=player)

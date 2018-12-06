@@ -10,6 +10,7 @@
 # Import functions
 from commands.miscellaneous import *
 from commands.snake import *
+from commands.anagrams import *
 
 # Startup message
 @botA.event

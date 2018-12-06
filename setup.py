@@ -6,6 +6,7 @@ import os
 import time
 import random
 import math
+from collections import Counter
 
 # Token from pycharm environmental variable
 TOKENA = os.environ['TOKENA']
